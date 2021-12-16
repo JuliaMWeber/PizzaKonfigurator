@@ -1,1 +1,179 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  background: url(assets/images/Home-Background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+  color: #fff;
+
+}
+
+/* html {
+  background: url(assets/images/Home-Background.jpg) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100% 100%;
+} */
+/* * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+} */
+.chili {
+  background-image: url('/assets/images/chili.svg');
+}
+
+.mozarella {
+  background-image: url('/assets/images/mozarella.svg');
+}
+
+.pepper {
+  background-image: url('/assets/images/pepper.svg');
+}
+
+.pepperoni {
+  background-image: url('/assets/images/pepperoni.svg');
+}
+
+.prawn {
+  background-image: url('/assets/images/prawn.svg');
+}
+
+.sweetcorn {
+  background-image: url('/assets/images/sweetcorn.svg');
+}
+
+.anchovy {
+  background-image: url('/assets/images/anchovy.svg');
+}
+
+.bacon {
+  background-image: url('/assets/images/bacon.svg');
+}
+
+.basil {
+  background-image: url('/assets/images/basil.svg');
+}
+
+.chilli {
+  background-image: url('/assets/images/chilli.svg');
+}
+
+.mozarella {
+  background-image: url('/assets/images/mozarella.svg');
+}
+
+.mushroom {
+  background-image: url('/assets/images/mushroom.svg');
+}
+
+.olive {
+  background-image: url('/assets/images/olive.svg');
+}
+
+.onion {
+  background-image: url('/assets/images/anchovy.svg');
+}
+
+.tomato {
+  background-image: url('/assets/images/tomato.svg');
+}
+
+.corn {
+  background-image: url('/assets/images/corn.svg');
+}
+
+.mozzarella {
+  background-image: url('/assets/images/mozzarella.svg');
+}
+
+/* button {
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  width: 120px;
+  background: #ffd701;
+  box-shadow: 2px 2px 1px 1px #ffd701d4;
+  font-weight: bold;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 80px;
+} */

@@ -1,0 +1,29 @@
+.homeContainer {
+  max-width: 50%;
+  margin: 8em;
+  padding: 3em;
+  /* background-color: #fff !important; */
+  background: rgba(204, 204, 204, 0.7) !important;
+  /* color: #000; */
+  border-radius: 2em;
+  /* opacity: 0.6; */
+}
+
+img {
+  max-width: 100%;
+  width: 50%;
+  display: block;
+}
+
+.homeContainer h1 {
+  color: #000;
+  font-weight: bold;
+}
+
+.homeContainer p {
+  color: #000;
+}
+
+.homeContainer .btn {
+  font-weight: bold;
+}
