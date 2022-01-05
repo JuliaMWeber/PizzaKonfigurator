@@ -1,12 +1,33 @@
 .homeContainer {
-  max-width: 50%;
-  margin: 8em;
-  padding: 3em;
-  /* background-color: #fff !important; */
-  background: rgba(204, 204, 204, 0.7) !important;
-  /* color: #000; */
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 2em;
+  background: rgba(204, 204, 204, 0.9) !important;
   border-radius: 2em;
-  /* opacity: 0.6; */
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .homeContainer {
+    max-width: 50%;
+    margin-top: 8em;
+    padding: 2em;
+    background: rgba(204, 204, 204, 0.9) !important;
+    border-radius: 2em;
+    text-align: left;
+  }
+
+  .btnPrimary {
+    /* margin-right: 0.5em; */
+    padding: 0.6em 3em !important;
+    /* margin-bottom: 0 !important; */
+    margin: 0 !important;
+  }
+
+  .btnSecondary {
+    padding: 0.6em 3em !important;
+    margin-left: 1.5em !important;
+  }
 }
 
 img {
@@ -16,8 +37,12 @@ img {
 }
 
 .homeContainer h1 {
-  color: #000;
+  color: #9b2226;
   font-weight: bold;
+}
+
+.mainHeader {
+  color: #003049 !important;
 }
 
 .homeContainer p {
@@ -26,4 +51,29 @@ img {
 
 .homeContainer .btn {
   font-weight: bold;
+}
+
+.btnPrimary {
+  background-color: #9b2226;
+  border: #9b2226;
+  border-radius: 0.5em;
+  padding: 0.6em 5em;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.btnPrimary:hover {
+  opacity: 0.9;
+}
+
+.btnSecondary {
+  border: 1px solid #9b2226;
+  border-radius: 0.5em;
+  padding: 0.6em 5.1em;
+  color: #9b2226;
+}
+
+.btnSecondary:hover {
+  color: #fff;
+  background-color: #9b2226;
 }

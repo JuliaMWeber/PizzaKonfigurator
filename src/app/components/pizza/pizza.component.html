@@ -1,7 +1,48 @@
 <div class="pizza">
   <div class="toppings" *ngFor="let topping of toppings; let i = index">
-    <div class="spacer">
-    </div>
-    <div class="content {{topping}}" [ngStyle]="getMyStyles(i)"></div>
+    <div class="spacer"></div>
+    <div class="content {{ topping }}" [ngStyle]="getMyStyles(i)"></div>
   </div>
 </div>
+
+<div class="btn btn-success text-align-center" (click)="addtoCart(topping)">Add to Cart</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Steps -->
+<!-- 
+1- add to cart for every pizza => save in the cart
+2- proceed to checkout button => Cart Page with customized Pizzas
+
+i have pizzaComponent where i imported my selected Toppings
+i have choices component where i created my pizzaComponent dynmaically and export it to pizzaComponent
+i have my Cart Service where i have 4 methods, addtoCart, getTotalPrice, removeCartItem, removeAllItems
+
+
+Add a service with pizzaItem and add a method to get all the pizza items from the server 
+Add a methode to delete the PizzaItem
+
+Set topping to as reminder when its clicked it gets marked=true, false.
+
++ button as a circle for add a topping and it must change to red - to delete the topping
+-->
+<!-- Steps -->

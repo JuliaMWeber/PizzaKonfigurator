@@ -1,0 +1,45 @@
+{
+  "pizzas": [{
+      "id": 1,
+      "title": "Pizza Margherita",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
+      "toppings": "basil, tomato, olives",
+      "imageUrl": ""
+    },
+    {
+      "id": 2,
+      "title": "Pizza Napeleon",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
+      "toppings": "fresh mozzarella, tomatoes, basil leaves, oregano, and olive oil",
+      "imageUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "Chicago Pizza",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
+      "toppings": "ground beef, sausage, pepperoni, onion, mushrooms, and green peppers, placed underneath the tomato sauce",
+      "imageUrl": ""
+    },
+    {
+      "id": 4,
+      "title": "New York Pizza",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
+      "toppings": "tomato sauce and mozzarella cheese",
+      "imageUrl": ""
+    },
+    {
+      "id": 5,
+      "title": "Sicilian Pizza",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
+      "toppings": "tomato, onion, anchovies, and herbs",
+      "imageUrl": ""
+    },
+    {
+      "id": 6,
+      "title": "Greek Pizza",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
+      "toppings": "mozzarella and cheddar or provolone",
+      "imageUrl": ""
+    }
+  ]
+}

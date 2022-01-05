@@ -1,1 +1,18 @@
+@media (min-width:768px) {
+  .container-fluid {
+    margin-left: 4.7em;
+  }
 
+  .navbar-brand {
+    margin-right: 2em;
+  }
+
+  .navbar-nav * {
+    margin-left: 0.8em;
+    font-weight: 700;
+  }
+
+  .dropdown-item {
+    margin: 0 !important;
+  }
+}

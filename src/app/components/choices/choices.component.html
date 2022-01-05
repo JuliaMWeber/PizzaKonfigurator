@@ -1,4 +1,9 @@
 <div class="container">
+  <h1 class="pizzaHeader">Create Your Own Pizza</h1>
+</div>
+
+<!-- Display the toppings array in the DOM -->
+<div class="container">
   <div class="name" *ngFor="let topping of toppings">
     <div (click)=selectToppings(topping)>
       <span class=" icon {{topping}}"></span>
@@ -8,8 +13,38 @@
     </div>
   </div>
 </div>
+<!-- Display the toppings array in the DOM -->
+
+<!-- Create Pizza Button -->
 <div class="createPizza">
   <button (click)=createPizza() class="btn btn-success text-align-center">Create Pizza</button>
 </div>
+<!-- Create Pizza Button -->
 
+<!-- customized Pizza  -->
 <div #pizza></div>
+<!-- customized Pizza  -->
+
+
+<!-- <a href="/cart" class="btn btn-success">Proceed To Checkout</a> -->
+
+
+<!-- <ng-container *ngFor="let pizza of pizzaSelected">
+  {{pizza}}
+</ng-container> -->
+
+<!-- <div *ngIf="PizzasSelected.length === 0" class="alert alert-info">Cart Item is empty</div> -->
+<ul class="list-group" *ngIf="pizzaSelected.length > 0">
+  <li class="list-group-item" *ngFor="let pizza of pizzaSelected">
+    <div class="cart-item">
+      <span>{{ pizza}}</span> x <span>4</span>: <strong>{{7 | currency: 'EUR'}}</strong>
+    </div>
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total: {{20 | currency: 'EUR'}}</strong>
+  </li>
+</ul>
+
+
+<a href="/cart" class="btn btn-success" *ngIf="pizzaSelected.length > 0">Proceed To Checkout</a>

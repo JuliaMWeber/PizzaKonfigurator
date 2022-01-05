@@ -1,153 +1,59 @@
-<!-- <h1>Hot Pizza Meals</h1>
-<div class="container-wrap">
-  <div class="row no-gutters d-flex">
-    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
-      <div class="services-wrap d-flex">
-        <a href="#" class="img" style="background-image: url(images/pizza-1.jpg);"></a>
-        <div class="text p-4">
-          <h3>Italian Pizza</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia </p>
-          <p class="price"><span>$2.90</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
-      <div class="services-wrap d-flex">
-        <a href="#" class="img" style="background-image: url(images/pizza-2.jpg);"></a>
-        <div class="text p-4">
-          <h3>Greek Pizza</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          <p class="price"><span>$2.90</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
-      <div class="services-wrap d-flex">
-        <a href="#" class="img" style="background-image: url(images/pizza-3.jpg);"></a>
-        <div class="text p-4">
-          <h3>Caucasian Pizza</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          <p class="price"><span>$2.90</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-        </div>
-      </div>
-    </div>
+<div class="containerPizzas">
+  <h1 class="pizzaHeader">Hot Pizza Meals</h1>
 
-    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
-      <div class="services-wrap d-flex">
-        <a href="#" class="img order-lg-last" style="background-image: url(images/pizza-4.jpg);"></a>
-        <div class="text p-4">
-          <h3>American Pizza</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia </p>
-          <p class="price"><span>$2.90</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
-      <div class="services-wrap d-flex">
-        <a href="#" class="img order-lg-last" style="background-image: url(images/pizza-5.jpg);"></a>
-        <div class="text p-4">
-          <h3>Tomatoe Pie</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          <p class="price"><span>$2.90</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 d-flex ftco-animate fadeInUp ftco-animated">
-      <div class="services-wrap d-flex">
-        <a href="#" class="img order-lg-last" style="background-image: url(images/pizza-6.jpg);"></a>
-        <div class="text p-4">
-          <h3>Margherita</h3>
-          <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          <p class="price"><span>$2.90</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Order</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
+
+
+
+  <!-- <div *ngFor="let pizzaSelected of PizzasSelected">
+  {{ pizzaSelected.title }}
 </div> -->
 
-<!-- All Pizzas Page -->
-<h1 class="pizzaHeader">Hot Pizza Meals</h1>
-<div class="d-flex flex-row bd-highlight mb-3">
-  <div class="p-2 bd-highlight">
-    <div class="productImg">
-      <a href=""><img src="../../../assets/images/Screenshot 2021-12-04 at 13.05.20.png" alt=""></a>
-    </div>
-    <div class="productDetails">
-      <h6>Margherita</h6>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        size
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">small</a></li>
-        <li><a class="dropdown-item" href="#">medium</a></li>
-        <li><a class="dropdown-item" href="#">large</a></li>
-      </ul>
-      <p class="price">2.9 Euro</p>
-      <button class="btn btn-success">add cart</button>
-    </div>
-  </div>
 
-  <div class="p-2 bd-highlight">
-    <div class="productImg">
-      <a href=""><img src="../../../assets/images/Screenshot 2021-12-04 at 13.05.20.png" alt=""></a>
-    </div>
-    <div class="productDetails">
-      <h6>Margherita</h6>
-      <div class="btn-group">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-          size
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">small</a></li>
-          <li><a class="dropdown-item" href="#">medium</a></li>
-          <li><a class="dropdown-item" href="#">large</a></li>
-        </ul>
+  <!-- <button class="btn btn-success" (click)="addtoCart(pizza)"> -->
+  <!-- add to cart -->
+  <!-- </button> -->
+  <!-- <select class="form-select form-select-sm btn btn-primary" aria-label=".form-select-sm example">
+            <option value="1">Klein</option>
+            <option value="2">Medium</option>
+            <option value="3">Groß</option>
+          </select>
+          <p class="price">2.9 Euro</p>
+          <button class="btn btn-success">add cart</button>
+        </div> -->
+  <div class="container">
+    <div class="row g-2">
+      <div class="col-md-4" *ngFor="let pizza of Pizzas">
+        <div class="p-3 cardPizza"><img src="../../../assets/images/Screenshot 2021-12-04 at 13.05.20.png" alt="" />
+          <h5 style="
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100ch;
+      ">
+            {{ pizza.title }}
+          </h5>
+          <p class="pizzaDesc">{{ pizza.description }}</p>
+          <p class="pizzaDesc">Toppings : {{ pizza.toppings }}</p>
+          <p>5 euro</p>
+          <button class="btn btn-success" (click)="addtoCart(pizza)">Add to Cart</button>
+        </div>
       </div>
-      <p>2.9 Euro</p>
-      <button class="btn btn-success">add cart</button>
-    </div>
-  </div>
 
-  <div class="p-2 bd-highlight">
-    <div class="productImg">
-      <a href=""><img src="../../../assets/images/Screenshot 2021-12-04 at 13.05.20.png" alt=""></a>
-    </div>
-    <div class="productDetails">
-      <h6>Margherita</h6>
-      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        size
-      </button>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">small</a></li>
-        <li><a class="dropdown-item" href="#">medium</a></li>
-        <li><a class="dropdown-item" href="#">large</a></li>
-      </ul>
-      <p>2.9 Euro</p>
-      <button class="btn btn-success">add cart</button>
-    </div>
-  </div>
-  <div class="p-2 bd-highlight">
-    <div class="productImg">
-      <a href=""><img src="../../../assets/images/Screenshot 2021-12-04 at 13.05.20.png" alt=""></a>
-    </div>
-    <div class="productDetails">
-      <h6>Margherita</h6>
-      <button type="button" class="btn btn-primary dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown"
-        aria-expanded="false">
-        size
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">small</a></li>
-        <li><a class="dropdown-item" href="#">medium</a></li>
-        <li><a class="dropdown-item" href="#">large</a></li>
-      </ul>
-      <p>2.9 Euro</p>
-      <button class="btn btn-success">add cart</button>
+      <div class="col-sm-4">
+        <div *ngIf="PizzasSelected.length === 0" class="alert alert-info">Cart Item is empty</div>
+        <ul class="list-group" *ngIf="PizzasSelected.length > 0">
+          <li class="list-group-item" *ngFor="let pizzaSelected of PizzasSelected">
+            <div class="cart-item">
+              <span>{{ pizzaSelected.title }}</span> x <span>4</span>: <strong>{{7 | currency: 'EUR'}}</strong>
+            </div>
+          </li>
+
+          <li class="list-group-item active">
+            <strong>Total: {{20 | currency: 'EUR'}}</strong>
+          </li>
+        </ul>
+
+      </div>
     </div>
   </div>
 </div>
-<!-- All Pizzas Page -->
-
-<!-- Customizing Section -->
-
-<!-- Customizing Section -->

@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-
+import { CartService } from "src/app/service/cart.service";
+import { PizzaService } from "src/app/service/pizza.service";
+import { Pizza } from "../../models/pizza";
 @Component({
   selector: "app-pizza",
   templateUrl: "./pizza.component.html",
@@ -7,15 +9,22 @@ import { Component, OnInit } from "@angular/core";
 })
 export class PizzaComponent implements OnInit {
   toppings: string[];
+  PizzaSelected: Pizza[] = [];
+  // toppings: Pizza[] = [];
+  // we dont need to use @Input() here, instead we create a variable and use instance with createPizza();
 
-  constructor() {}
+  constructor(
+    private cartService: CartService,
+    private pizzaService: PizzaService
+  ) {}
 
   ngOnInit() {
-    console.log(this.toppings);
+    this.cartService.getPizzas().subscribe((res) => {
+      this.PizzaSelected = res;
+    });
   }
 
   getMyStyles(i) {
-    console.log(this.translate(i));
     const myStyles = {
       transform: this.translate(i),
     };
@@ -27,5 +36,12 @@ export class PizzaComponent implements OnInit {
     const y = 20 + Math.round(26 * Math.sin(i * ((2 * Math.PI) / 15))) + "px";
     const val = `translate(${x}, ${y})`;
     return val;
+  }
+
+  // we need an array of the customized pizzas with its selectedToppings
+  addtoCart(topping: any) {
+    // topping = this.toppings;
+    this.cartService.addToCart(this.toppings);
+    // console.log(this.toppings);
   }
 }

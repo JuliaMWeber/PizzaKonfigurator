@@ -1,17 +1,19 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 3em;
 }
 
 .name {
   width: calc(14% - 24px);
   padding: 1%;
   text-align: center;
-  background-color: gold;
+  background-color: rebeccapurple;
   margin: 4px;
   border-radius: 8px;
-  box-shadow: 2px 2px 1px 1px #ffd701d4;
+  box-shadow: 2px 2px 1px 1px rebeccapurple;
 }
 
 .name:hover {
@@ -25,6 +27,17 @@
 }
 
 .createPizza {
-  margin: 0 auto;
+  margin: 2em;
   display: flex;
+  justify-content: center;
+}
+
+
+img {
+  display: block;
+  max-width: 50%;
+}
+
+#pizza {
+  display: grid;
 }

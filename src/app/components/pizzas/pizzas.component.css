@@ -1,0 +1,38 @@
+.containerPizzas {
+  margin-top: 2em;
+}
+
+.pizzaHeader {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-weight: 700;
+  margin-top: 0.3em;
+}
+
+.cardPizza {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* margin-bottom: 7%; */
+  padding-bottom: 2em;
+  border-radius: 1em;
+}
+
+.pizzaDesc {
+  padding: 0.2em;
+}
+
+.col-md-6 {
+  width: 30% !important;
+  margin: 2%;
+}

@@ -1,1 +1,21 @@
-<p>cart works!</p>
+<!-- <h1>Cart</h1> -->
+
+<!-- <div *ngFor="let pizzaSelected of PizzasSelected">
+  <h1>{{pizzaSelected.title}}</h1>
+</div> -->
+
+<!-- <div *ngFor="let product of products">
+  <h1>{{product.title}}</h1>
+  <h2>{{product.id}}</h2>
+</div> -->
+
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let i of [1,2,3,4,5]">
+    <app-cart-item></app-cart-item>
+  </li>
+
+  <li class="list-group-item active">
+    <strong>Total: {{20 | currency: 'EUR'}}</strong>
+  </li>
+</ul>
