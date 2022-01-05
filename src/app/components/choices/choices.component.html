@@ -1,7 +1,9 @@
 <div class="container">
   <h1 class="pizzaHeader">Create Your Own Pizza</h1>
 </div>
-
+<div class="createPizza">
+  <button (click)=createPizza() class="btn btn-success text-align-center">Create Pizza</button>
+</div>
 <!-- Display the toppings array in the DOM -->
 <div class="container">
   <div class="name" *ngFor="let topping of toppings">
@@ -16,9 +18,7 @@
 <!-- Display the toppings array in the DOM -->
 
 <!-- Create Pizza Button -->
-<div class="createPizza">
-  <button (click)=createPizza() class="btn btn-success text-align-center">Create Pizza</button>
-</div>
+
 <!-- Create Pizza Button -->
 
 <!-- customized Pizza  -->
