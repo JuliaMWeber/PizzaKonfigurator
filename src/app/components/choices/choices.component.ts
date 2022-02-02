@@ -30,19 +30,19 @@ export class ChoicesComponent implements OnInit {
   ) {
     this.selectedToppings = [];
     (this.toppings = [
-      "anchovy",
-      "bacon",
-      "basil",
-      "chili",
-      "mozzarella",
-      "mushroom",
-      "olive",
-      "onion",
-      "pepper",
-      "pepperoni",
-      "prawn",
-      "sweetcorn",
-      "tomato",
+      "Sardellen",
+      "Bacon",
+      "Basilikum",
+      "Chilli",
+      "Mozzarella",
+      "Pilze",
+      "Oliven",
+      "Zwiebeln",
+      "Paprika",
+      "Salami",
+      "Garnelen",
+      "Mais",
+      "Tomaten",
     ]),
       this.cartService.getPizzas().subscribe((res) => {
         this.pizzaSelected = res;
