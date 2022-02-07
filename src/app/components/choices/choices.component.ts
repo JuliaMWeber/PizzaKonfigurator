@@ -68,6 +68,8 @@ export class ChoicesComponent implements OnInit {
     this.selectedToppings = []; // we will empty the selectedToppings array every time before creating a new pizza
     pizza.instance.toppings = this.selectedToppings;
   }
-
+  chooseDough() {
+    this.pizza
+  }
   ngOnInit() {}
 }

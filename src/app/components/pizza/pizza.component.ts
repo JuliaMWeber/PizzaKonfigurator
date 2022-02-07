@@ -42,6 +42,6 @@ export class PizzaComponent implements OnInit {
   addtoCart(topping: any) {
     // topping = this.toppings;
     this.cartService.addToCart(this.toppings);
-    // console.log(this.toppings);
+    console.log(this.toppings);
   }
 }

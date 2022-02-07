@@ -5,6 +5,22 @@
   <button (click)=createPizza() class="btn btn-success text-align-center">Pizza erstellen</button>
 </div>
 <!-- Display the toppings array in the DOM -->
+<div class="dough" style="text-align: center">
+  <h3>Wähle deinen Teig!</h3>
+  <div class="container">
+    <div class="name">Klassisch</div>
+    <div class="name" (click)="chooseDough()">Vollkorn</div>
+  </div>
+</div>
+
+<div class="sauce" style="text-align: center">
+  <h3>Wähle deine Sauce!</h3>
+  <div class="container">
+    <div class="name">Tomatensauce</div>
+    <div class="name">BBQ Sauce</div>
+  </div>
+</div>
+<h3 style="text-align: center">Wähle deinen Belag!</h3>
 <div class="container">
   <div class="name" *ngFor="let topping of toppings">
     <div (click)=selectToppings(topping)>
