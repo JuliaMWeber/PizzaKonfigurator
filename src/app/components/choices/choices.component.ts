@@ -43,6 +43,13 @@ export class ChoicesComponent implements OnInit {
       "Garnelen",
       "Mais",
       "Tomaten",
+      "Ananas",
+      "Brokkoli",
+      "Käse",
+      "Thunfisch",
+      "Knoblauch",
+      "Artischocken",
+      "Salat"
     ]),
       this.cartService.getPizzas().subscribe((res) => {
         this.pizzaSelected = res;
@@ -69,7 +76,7 @@ export class ChoicesComponent implements OnInit {
     pizza.instance.toppings = this.selectedToppings;
   }
   chooseDough() {
-    this.pizza
+
   }
   ngOnInit() {}
 }
