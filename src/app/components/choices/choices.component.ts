@@ -26,7 +26,7 @@ export class ChoicesComponent implements OnInit {
 
   constructor(
     private resolver: ComponentFactoryResolver,
-    private cartService: CartService
+    private cartService: CartService,
   ) {
     this.selectedToppings = [];
     (this.toppings = [
@@ -74,9 +74,24 @@ export class ChoicesComponent implements OnInit {
     const pizza = this.pizza.createComponent(pizzaFactory);
     this.selectedToppings = []; // we will empty the selectedToppings array every time before creating a new pizza
     pizza.instance.toppings = this.selectedToppings;
+    const showDough: HTMLElement = document.getElementById("dough");
+    showDough.style.display = 'block';
+    const showCreateButton: HTMLElement = document.getElementById("createButton");
+    showCreateButton.style.display = 'none';
   }
-  chooseDough() {
-
+  chooseDough(dough) {
+    const showDough: HTMLElement = document.getElementById("dough");
+    const showSauce: HTMLElement = document.getElementById("sauce");
+    this.selectedToppings.push(dough);
+    showSauce.style.display = 'block';
+    showDough.style.display = 'none';
+  }
+  chooseSauce(sauce){
+    const showSauce: HTMLElement = document.getElementById("sauce");
+    const showToppings: HTMLElement = document.getElementById("toppings");
+    this.selectedToppings.push(sauce);
+    showSauce.style.display = 'none';
+    showToppings.style.display = 'flex';
   }
   ngOnInit() {}
 }

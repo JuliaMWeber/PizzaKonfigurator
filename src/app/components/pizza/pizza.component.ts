@@ -43,5 +43,10 @@ export class PizzaComponent implements OnInit {
     // topping = this.toppings;
     this.cartService.addToCart(this.toppings);
     console.log(this.toppings);
+    const showCreateButton: HTMLElement = document.getElementById("createButton");
+    const showToppings: HTMLElement = document.getElementById("toppings");
+    showCreateButton.style.display = 'block';
+    showCreateButton.style.textAlign = 'center';
+    showToppings.style.display = 'none';
   }
 }

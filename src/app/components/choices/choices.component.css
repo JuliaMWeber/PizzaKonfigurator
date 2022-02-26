@@ -43,4 +43,8 @@ img {
 }
 h3{
   margin-left: 3em;
+  text-align: center;
+}
+.hide{
+  display: none;
 }
