@@ -89,9 +89,12 @@ export class ChoicesComponent implements OnInit {
   chooseSauce(sauce){
     const showSauce: HTMLElement = document.getElementById("sauce");
     const showToppings: HTMLElement = document.getElementById("toppings");
+    const toppingsHeader: HTMLElement = document.getElementById("toppingsHeader");
     this.selectedToppings.push(sauce);
     showSauce.style.display = 'none';
     showToppings.style.display = 'flex';
+    toppingsHeader.style.display = 'block';
+    toppingsHeader.style.textAlign = 'center';
   }
   ngOnInit() {}
 }

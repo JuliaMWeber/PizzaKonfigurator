@@ -20,7 +20,7 @@
     <div class="name" (click)="chooseSauce('BBQ Sauce')">BBQ Sauce</div>
   </div>
 </div>
-<h3 class="hide">Wähle deinen Belag!</h3>
+<h3 class="hide" id="toppingsHeader">Wähle deinen Belag!</h3>
 <div class="container hide" id="toppings">
   <div class="name" *ngFor="let topping of toppings">
     <div (click)=selectToppings(topping)>

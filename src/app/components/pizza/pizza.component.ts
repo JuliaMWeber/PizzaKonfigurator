@@ -45,8 +45,10 @@ export class PizzaComponent implements OnInit {
     console.log(this.toppings);
     const showCreateButton: HTMLElement = document.getElementById("createButton");
     const showToppings: HTMLElement = document.getElementById("toppings");
+    const toppingsHeader: HTMLElement = document.getElementById("toppingsHeader");
     showCreateButton.style.display = 'block';
     showCreateButton.style.textAlign = 'center';
     showToppings.style.display = 'none';
+    toppingsHeader.style.display = 'none';
   }
 }
