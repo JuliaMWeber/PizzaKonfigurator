@@ -77,6 +77,8 @@ export class ChoicesComponent implements OnInit {
     showDough.style.display = 'block';
     const showCreateButton: HTMLElement = document.getElementById("createButton");
     showCreateButton.style.display = 'none';
+    const showAddToCardButton: HTMLElement = document.getElementById("addToCardBtn");
+    showAddToCardButton.style.display = 'none';
   }
   chooseDough(dough) {
     const showDough: HTMLElement = document.getElementById("dough");
@@ -94,6 +96,8 @@ export class ChoicesComponent implements OnInit {
     showToppings.style.display = 'flex';
     toppingsHeader.style.display = 'block';
     toppingsHeader.style.textAlign = 'center';
+    const showAddToCardButton: HTMLElement = document.getElementById("addToCardBtn");
+    showAddToCardButton.style.display = 'inline-block';
   }
   pizzaPrice(pizza): number{
     let amount = pizza.length;
