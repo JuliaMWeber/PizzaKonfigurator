@@ -8,7 +8,7 @@ import { Pizza } from "../models/pizza";
 export class CartService {
   public cartItemList: any = [];
   public pizzaList = new BehaviorSubject<any>([]);
-
+  public price = 0;
   constructor() {}
 
   getPizzas() {
@@ -25,6 +25,7 @@ export class CartService {
     this.pizzaList.next(this.cartItemList);
     this.getTotalPrice();
     // console.log(this.cartItemList);
+    this.price += 5+pizza.length*0.5;
   }
 
   getTotalPrice(): number {

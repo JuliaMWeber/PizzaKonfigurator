@@ -16,8 +16,8 @@
 <div class="sauce hide" id="sauce" style="text-align: center">
   <h3>Wähle deine Sauce!</h3>
   <div class="container">
-    <div class="name" (click)="chooseSauce('Sauce: Tomatensauce')">Tomatensauce</div>
-    <div class="name" (click)="chooseSauce('Sauce: BBQ Sauce')">BBQ Sauce</div>
+    <div class="name" (click)="chooseSauce('Tomatensauce')">Tomatensauce</div>
+    <div class="name" (click)="chooseSauce('BBQ Sauce')">BBQ Sauce</div>
   </div>
 </div>
 <h3 class="hide" id="toppingsHeader">Wähle deinen Belag!</h3>
@@ -58,7 +58,7 @@
   </li>
 
   <li class="list-group-item active">
-    <strong>Total: {{0 | currency: 'EUR'}}</strong>
+    <strong>Total: {{cartService.price | currency: 'EUR'}}</strong>
   </li>
 </ul>
 
