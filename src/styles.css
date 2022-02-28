@@ -84,6 +84,12 @@ img {
 .mozzarella {
   background-image: url("/assets/images/mozzarella.svg");
 }
+.salad {
+  background-image: url("/assets/images/salad.svg");
+}
+.knoblauch {
+  background-image: url("/assets/images/.knoblauch.svg");
+}
 
 .pizzaHeader {
   text-align: center;
