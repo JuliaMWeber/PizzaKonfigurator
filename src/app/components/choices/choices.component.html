@@ -8,8 +8,8 @@
 <div class="dough hide" id="dough" style="text-align: center">
   <h3>Wähle deinen Teig!</h3>
   <div class="container">
-    <div class="name" (click)="chooseDough('Teig: Klassisch')">Klassisch</div>
-    <div class="name" (click)="chooseDough('Teig: Vollkorn')">Vollkorn</div>
+    <div class="name" (click)="chooseDough('Klassischer Teig')">Klassisch</div>
+    <div class="name" (click)="chooseDough('Vollkornteig')">Vollkorn</div>
   </div>
 </div>
 
@@ -53,12 +53,12 @@
 <ul class="list-group" *ngIf="pizzaSelected.length > 0">
   <li class="list-group-item" *ngFor="let pizza of pizzaSelected">
     <div class="cart-item">
-      <span>{{ pizza}}</span> x <span>4</span>: <strong>{{7 | currency: 'EUR'}}</strong>
+      <span>{{ pizza}}</span> x <span>{{amountOfToppings(pizza)}}</span>: <strong>{{pizzaPrice(pizza) | currency: 'EUR'}}</strong>
     </div>
   </li>
 
   <li class="list-group-item active">
-    <strong>Total: {{20 | currency: 'EUR'}}</strong>
+    <strong>Total: {{0 | currency: 'EUR'}}</strong>
   </li>
 </ul>
 

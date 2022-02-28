@@ -19,7 +19,6 @@ import { Pizza } from "../../models/pizza";
 export class ChoicesComponent implements OnInit {
   @ViewChild("pizza", { static: true, read: ViewContainerRef })
   pizza: ViewContainerRef;
-
   selectedToppings: string[];
   toppings: string[];
   public pizzaSelected: Pizza[] = [];
@@ -96,5 +95,14 @@ export class ChoicesComponent implements OnInit {
     toppingsHeader.style.display = 'block';
     toppingsHeader.style.textAlign = 'center';
   }
+  pizzaPrice(pizza): number{
+    let amount = pizza.length;
+    let price = 5 + amount*0.5;
+    return price;
+  }
+  amountOfToppings(pizza):number{
+    return pizza.length-2;
+  }
   ngOnInit() {}
+
 }
