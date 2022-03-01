@@ -42,3 +42,7 @@
 .knoblauch {
   background-repeat: no-repeat;
 }
+#addToCardBtn{
+  margin-left: 48%;
+  margin-bottom: 1em;
+}

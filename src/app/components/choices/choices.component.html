@@ -50,7 +50,11 @@
 </ng-container> -->
 
 <!-- <div *ngIf="PizzasSelected.length === 0" class="alert alert-info">Cart Item is empty</div> -->
+
 <ul class="list-group" *ngIf="pizzaSelected.length > 0">
+  <div class="list-group-item">
+    <span><i class="fas fa-shopping-cart"></i>&nbsp;Warenkorb</span>
+  </div>
   <li class="list-group-item" *ngFor="let pizza of pizzaSelected">
     <div class="cart-item">
       <span>{{ pizza}}</span> x <span>{{amountOfToppings(pizza)}}</span>: <strong>{{pizzaPrice(pizza) | currency: 'EUR'}}</strong>
