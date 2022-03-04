@@ -7,7 +7,7 @@ import {
   Output,
   EventEmitter,
 } from "@angular/core";
-import { PizzaComponent } from "./../pizza/pizza.component";
+import { PizzaComponent } from "../pizza/pizza.component";
 import { CartService } from "src/app/service/cart.service";
 import { Pizza } from "../../models/pizza";
 
@@ -22,10 +22,10 @@ export class ChoicesComponent implements OnInit {
   selectedToppings: string[];
   toppings: string[];
   public pizzaSelected: Pizza[] = [];
-
+  toppingsArray: any [] = [];
   constructor(
     private resolver: ComponentFactoryResolver,
-    private cartService: CartService,
+    private cartService: CartService
   ) {
     this.selectedToppings = [];
     (this.toppings = [
@@ -108,14 +108,13 @@ export class ChoicesComponent implements OnInit {
     return pizza.length-2;
   }
   setCookie(name,value,days) {
-    var expires = "";
+    let expires = "";
     if (days) {
-      var date = new Date();
+      let date = new Date();
       date.setTime(date.getTime() + (days*24*60*60*1000));
       expires = "; expires=" + date.toUTCString();
     }
     document.cookie = name + "=" + (value || "")  + expires + "; path=/";
   }
-
   ngOnInit() {}
 }

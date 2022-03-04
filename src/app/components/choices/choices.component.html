@@ -2,7 +2,7 @@
   <h1 class="pizzaHeader">Konfiguriere hier DEINE Pizza</h1>
 </div>
 <div class="createPizza" id="createButton">
-  <button (click)=createPizza() class="btn btn-success text-align-center">Pizza erstellen</button>
+  <button (click)=createPizza() class="btn btn-success text-align-center">Neue Pizza erstellen</button>
 </div>
 <!-- Display the toppings array in the DOM -->
 <div class="dough hide" id="dough" style="text-align: center">
@@ -67,4 +67,4 @@
 </ul>
 
 
-<a href="/cart" class="btn btn-success" *ngIf="pizzaSelected.length > 0">{{setCookie("price",cartService.price, 1)}}Zum Warenkorb</a>
+<a href="/cart" class="btn btn-success" *ngIf="pizzaSelected.length > 0">{{setCookie("price",cartService.price, 1) }}Zum Warenkorb</a>

@@ -11,7 +11,8 @@ export class CartComponent implements OnInit {
   public PizzasSelected: Pizza[] = [];
   // public grandTotal !: number;
 
-  constructor(private cartService: CartService) {}
+  constructor(
+    private cartService: CartService  ) {}
 
   getCookie(name) {
     const nameEQ = name + "=";
@@ -23,7 +24,14 @@ export class CartComponent implements OnInit {
     }
     return null;
   }
-
+  pizzaPrice(pizza): number{
+    let amount = pizza.length;
+    let price = 5 + amount*0.5;
+    return price;
+  }
+  amountOfToppings(pizza):number{
+    return pizza.length-2;
+  }
   ngOnInit() {
     this.cartService.getPizzas().subscribe((res) => {
       this.PizzasSelected = res;

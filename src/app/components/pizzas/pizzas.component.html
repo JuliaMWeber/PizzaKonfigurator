@@ -32,24 +32,23 @@
       ">
             {{ pizza.title }}
           </h5>
-          <p class="pizzaDesc">{{ pizza.description }}</p>
           <p class="pizzaDesc">Toppings : {{ pizza.toppings }}</p>
-          <p>5 euro</p>
-          <button class="btn btn-success" (click)="addtoCart(pizza)">Add to Cart</button>
+          <p>{{pizza.price}} €</p>
+          <button class="btn btn-success" (click)="addtoCart(pizza)"><i class="fas fa-shopping-cart"></i>+</button>
         </div>
       </div>
 
       <div class="col-sm-4">
-        <div *ngIf="PizzasSelected.length === 0" class="alert alert-info">Cart Item is empty</div>
+        <div *ngIf="PizzasSelected.length === 0" class="alert alert-info">leerer Warenkorb</div>
         <ul class="list-group" *ngIf="PizzasSelected.length > 0">
           <li class="list-group-item" *ngFor="let pizzaSelected of PizzasSelected">
             <div class="cart-item">
-              <span>{{ pizzaSelected.title }}</span> x <span>4</span>: <strong>{{7 | currency: 'EUR'}}</strong>
+              <span>{{ pizzaSelected.title }}</span>: <strong>{{pizzaSelected.price | currency: 'EUR'}}</strong>
             </div>
           </li>
 
           <li class="list-group-item active">
-            <strong>Total: {{20 | currency: 'EUR'}}</strong>
+            <strong>Total: {{totalPrice | currency: 'EUR'}}</strong>
           </li>
         </ul>
 

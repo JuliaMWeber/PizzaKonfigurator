@@ -11,7 +11,7 @@ import { Pizza } from '../../models/pizza';
 export class PizzasComponent implements OnInit {
 	Pizzas: Pizza[] = [];
 	PizzasSelected: Pizza[] = [];
-
+  totalPrice: number = 0.00;
 	constructor(private cartService: CartService, private pizzaService: PizzaService) {}
 
 	ngOnInit() {
@@ -31,5 +31,8 @@ export class PizzasComponent implements OnInit {
 
 	addtoCart(pizza: any) {
 		this.cartService.addToCart(pizza);
+    console.log(pizza.price);
+
+    this.totalPrice += +pizza.price;
 	}
 }

@@ -3,42 +3,48 @@
       "id": 1,
       "title": "Pizza Margherita",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
-      "toppings": "basil, tomato, olives",
+      "toppings": "Basilikum, Tomaten, Oliven",
+      "price": "6",
       "imageUrl": ""
     },
     {
       "id": 2,
       "title": "Pizza Napeleon",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
-      "toppings": "fresh mozzarella, tomatoes, basil leaves, oregano, and olive oil",
+      "toppings": "Frische Mozzarella, Tomaten, Basilikum, Oregano und Olivenöl",
+      "price": "7",
       "imageUrl": ""
     },
     {
       "id": 3,
       "title": "Chicago Pizza",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
-      "toppings": "ground beef, sausage, pepperoni, onion, mushrooms, and green peppers, placed underneath the tomato sauce",
+      "toppings": "Rinderhackfleisch, Wurst, Paprika, Zwiebeln, Pilze und grüne Paprika, darunter die Tomatensauce",
+      "price": "8",
       "imageUrl": ""
     },
     {
       "id": 4,
       "title": "New York Pizza",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
-      "toppings": "tomato sauce and mozzarella cheese",
+      "toppings": "Tomatensauce und Mozzarella",
+      "price": "8",
       "imageUrl": ""
     },
     {
       "id": 5,
       "title": "Sicilian Pizza",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
-      "toppings": "tomato, onion, anchovies, and herbs",
+      "toppings": "Tomaten, Zwiebeln, Sardellen und Kräuter",
+      "price": "7",
       "imageUrl": ""
     },
     {
       "id": 6,
       "title": "Greek Pizza",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, veritatis.",
-      "toppings": "mozzarella and cheddar or provolone",
+      "toppings": "Mozzarella und Cheddar oder Provolone",
+      "price": "6.5",
       "imageUrl": ""
     }
   ]
