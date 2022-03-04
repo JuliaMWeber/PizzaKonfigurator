@@ -39,6 +39,9 @@
       </div>
 
       <div class="col-sm-4">
+        <div class="list-group-item">
+          <span><i class="fas fa-shopping-cart"></i>&nbsp;Warenkorb</span>
+        </div>
         <div *ngIf="PizzasSelected.length === 0" class="alert alert-info">leerer Warenkorb</div>
         <ul class="list-group" *ngIf="PizzasSelected.length > 0">
           <li class="list-group-item" *ngFor="let pizzaSelected of PizzasSelected">
