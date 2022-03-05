@@ -38,8 +38,13 @@
 .Mais,
 .Tomaten,
 .Mozzarella,
-.salad,
-.knoblauch {
+.Salat,
+.Knoblauch,
+.Käse,
+.Brokkoli,
+.Thunfisch,
+.Ananas,
+.Artischocken{
   background-repeat: no-repeat;
 }
 #addToCardBtn{

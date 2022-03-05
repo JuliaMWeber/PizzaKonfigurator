@@ -33,7 +33,7 @@ export class PizzaComponent implements OnInit {
 
   translate(i) {
     const x = -30 + Math.round(50 * Math.cos(i * ((2 * Math.PI) / 15))) + "px";
-    const y = 15 + Math.round(26 * Math.sin(i * ((2 * Math.PI) / 15))) + "px";
+    const y = 10 + Math.round(26 * Math.sin(i * ((2 * Math.PI) / 15))) + "px";
     const val = `translate(${x}, ${y})`;
     return val;
   }

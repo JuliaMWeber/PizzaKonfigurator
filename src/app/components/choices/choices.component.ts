@@ -45,11 +45,12 @@ export class ChoicesComponent implements OnInit {
       "Ananas",
       "Brokkoli",
       "Käse",
+      "Salat",
       "Thunfisch",
       "Knoblauch",
       "Artischocken",
-      "Salat"
-    ]),
+
+    ])
       this.cartService.getPizzas().subscribe((res) => {
         this.pizzaSelected = res;
       });
